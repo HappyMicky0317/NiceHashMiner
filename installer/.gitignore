@@ -1,0 +1,7 @@
+*.dll
+*.exe
+*.exe.config
+tmp_*
+nhm_*
+cached_plugins
+log4net.xml

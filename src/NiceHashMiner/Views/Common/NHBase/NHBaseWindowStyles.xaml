@@ -1,0 +1,140 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:NiceHashMiner.Views.Common.NHBase">
+
+    <Style TargetType="{x:Type ButtonBase}" x:Key="WindowButtonStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ButtonBase}">
+                    <Border
+                            x:Name="Chrome"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Margin="0"
+                            Background="{TemplateBinding Background}"
+                            SnapsToDevicePixels="True">
+                        <ContentPresenter
+                                ContentTemplate="{TemplateBinding ContentTemplate}"
+                                Content="{TemplateBinding Content}"
+                                ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                Margin="{TemplateBinding Padding}"
+                                RecognizesAccessKey="True"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesome}"/>
+        <Setter Property="FontSize" Value="13.333" />
+        <Setter Property="Foreground" Value="#CECDCD" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="#FBA342" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style BasedOn="{StaticResource WindowButtonStyle}" TargetType="{x:Type ButtonBase}" x:Key="minimizeWindowStyle">
+        <Setter Property="Content" Value="&#xf2d1;" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <Style BasedOn="{StaticResource WindowButtonStyle}" TargetType="{x:Type ButtonBase}" x:Key="closeWindowStyle">
+        <Setter Property="Content" Value="&#xf00d;" />
+        <Setter Property="FontSize" Value="24" />
+    </Style>
+
+    <Style TargetType="local:BaseDialogWindow" x:Key="BaseDialogWindowStyle">
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="MinHeight" Value="320"/>
+        <Setter Property="MinWidth" Value="480"/>
+        <Setter Property="RenderOptions.BitmapScalingMode" Value="NearestNeighbor"/>
+        <Setter Property="Title" Value="{Binding Title}"/>
+        <Setter Property="WindowChrome.WindowChrome">
+            <Setter.Value>
+                <WindowChrome GlassFrameThickness="1" 
+                              ResizeBorderThickness="4"
+                              CaptionHeight="0"/>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:BaseDialogWindow}">
+                    <Grid Background="{DynamicResource BackgroundColor}" x:Name="WindowRoot">
+                        <Grid x:Name="LayoutRoot" Background="{DynamicResource BackgroundColor}">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <!--TitleBar-->
+                            <Grid x:Name="PART_HeaderBar">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                
+                                <TextBlock Text="" 
+                                           Grid.Column="0"
+                                           Grid.ColumnSpan="3"
+                                           TextTrimming="CharacterEllipsis"
+                                           HorizontalAlignment="Stretch" 
+                                           FontSize="13"
+                                           TextAlignment="Left"
+                                           VerticalAlignment="Center"
+                                           Width="Auto"
+                                           Padding="24,0,0,0"
+                                           Foreground="Black"
+                                           Panel.ZIndex="0"
+                                           IsEnabled="{TemplateBinding IsActive}">
+                                    <Grid x:Name="NHMIcon" Width="24" Height="24" Background="{DynamicResource NHMLogo}" />
+                                    <TextBlock Margin="8,-8,0,0"
+                                               Style="{DynamicResource FontsTypography.NiceHash-Miner}"
+                                               VerticalAlignment="Center"
+                                               HorizontalAlignment="Center"
+                                               x:Name="WindowTitle">NiceHash Miner</TextBlock>
+                                </TextBlock>
+
+                                <Grid x:Name="WindowControlsGrid"
+                                      Grid.Column="2"
+                                      Background="Transparent"
+                                      HorizontalAlignment="Right"
+                                      Margin="0,2.5,12,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="28"/>
+                                        <ColumnDefinition Width="36"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    
+
+                                    <Button x:Name="MinimizeButton" Style="{StaticResource minimizeWindowStyle}"
+                                            Grid.Column="0"/>
+
+                                    <Button x:Name="CloseButton" Style="{StaticResource closeWindowStyle}"
+                                            Grid.Column="1">
+                                        <Button.Resources>
+                                            <Style TargetType="Border">
+                                                <Setter Property="Background" Value="Aqua" />
+                                            </Style>
+                                        </Button.Resources>
+                                    </Button>
+                                </Grid>
+                            </Grid>
+
+                            <Grid x:Name="PART_MainContentGrid"
+                                  Grid.Row="1"
+                                  Panel.ZIndex="10">
+                                <ContentPresenter x:Name="PART_MainContentPresenter" Grid.Row="1"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

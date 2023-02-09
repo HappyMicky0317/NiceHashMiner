@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Icons/Icons.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+    
+    <DrawingBrush x:Key="NHMLogoLightBrush" Drawing="{StaticResource NHMLogoLight}" />
+    <DrawingBrush x:Key="NHMLogoDarkBrush" Drawing="{StaticResource NHMLogoDark}" />
+
+    <DrawingBrush x:Key="NHMBigLogoLightBrush" Drawing="{DynamicResource NHMLogoBigLight}" />
+    <DrawingBrush x:Key="NHMBigLogoDarkBrush" Drawing="{DynamicResource NHMLogoBigDark}" />
+
+    <DrawingBrush x:Key="LoginCircleLogoLightBrush" Drawing="{StaticResource LoginCircleLogoLight}" />
+    <DrawingBrush x:Key="LoginCircleLogoDarkBrush" Drawing="{StaticResource LoginCircleLogoDark}" />
+    <DrawingBrush x:Key="LoginQRCircleLightBrush" Drawing="{StaticResource LoginQRCircleLight}" />
+
+</ResourceDictionary>

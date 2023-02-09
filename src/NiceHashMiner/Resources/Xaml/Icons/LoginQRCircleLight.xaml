@@ -1,0 +1,81 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:NiceHashMiner.Resources.Xaml.Icons">
+    <DrawingGroup x:Key="LoginQRCircleLight">
+        <DrawingGroup x:Name="DrawingLayer">
+            <DrawingGroup.ClipGeometry>
+                <RectangleGeometry Rect="0,0,160,160" />
+            </DrawingGroup.ClipGeometry>
+            <GeometryDrawing Brush="#FFEDEDED">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,2.5C37.1979,2.5 2.5,37.1979 2.5,80 2.5,122.802 37.1979,157.5 80,157.5 122.802,157.5 157.5,122.802 157.5,80 157.5,37.1979 122.802,2.5 80,2.5z M1.5,80C1.5,36.6456 36.6456,1.5 80,1.5 123.354,1.5 158.5,36.6456 158.5,80 158.5,123.354 123.354,158.5 80,158.5 36.6456,158.5 1.5,123.354 1.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFFBC241">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="Nonzero" Figures="M80,68L92,68 92,76 80,76 80,68z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFFBC241">
+                <GeometryDrawing.Geometry>
+                    <EllipseGeometry RadiusX="4" RadiusY="4" Center="72,72" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFFBC241">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="Nonzero" Figures="M80,92C86.6274,92,92,86.6274,92,80L84,80C84,82.2091 82.2091,84 80,84 77.7909,84 76,82.2091 76,80L68,80C68,86.6274,73.3726,92,80,92z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFD7D6D6">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,52.5C64.8122,52.5 52.5,64.8122 52.5,80 52.5,95.1878 64.8122,107.5 80,107.5 95.1878,107.5 107.5,95.1878 107.5,80 107.5,64.8122 95.1878,52.5 80,52.5z M51.5,80C51.5,64.2599 64.2599,51.5 80,51.5 95.7401,51.5 108.5,64.2599 108.5,80 108.5,95.7401 95.7401,108.5 80,108.5 64.2599,108.5 51.5,95.7401 51.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFDBDADA">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,47.5C62.0507,47.5 47.5,62.0507 47.5,80 47.5,97.9493 62.0507,112.5 80,112.5 97.9493,112.5 112.5,97.9493 112.5,80 112.5,62.0507 97.9493,47.5 80,47.5z M46.5,80C46.5,61.4985 61.4985,46.5 80,46.5 98.5015,46.5 113.5,61.4985 113.5,80 113.5,98.5015 98.5015,113.5 80,113.5 61.4985,113.5 46.5,98.5015 46.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFDDDCDC">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,42.5C59.2893,42.5 42.5,59.2893 42.5,80 42.5,100.711 59.2893,117.5 80,117.5 100.711,117.5 117.5,100.711 117.5,80 117.5,59.2893 100.711,42.5 80,42.5z M41.5,80C41.5,58.737 58.737,41.5 80,41.5 101.263,41.5 118.5,58.737 118.5,80 118.5,101.263 101.263,118.5 80,118.5 58.737,118.5 41.5,101.263 41.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFDFDEDE">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,37.5C56.5279,37.5 37.5,56.5279 37.5,80 37.5,103.472 56.5279,122.5 80,122.5 103.472,122.5 122.5,103.472 122.5,80 122.5,56.5279 103.472,37.5 80,37.5z M36.5,80C36.5,55.9756 55.9756,36.5 80,36.5 104.024,36.5 123.5,55.9756 123.5,80 123.5,104.024 104.024,123.5 80,123.5 55.9756,123.5 36.5,104.024 36.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFE1E0E0">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,32.5C53.7665,32.5 32.5,53.7665 32.5,80 32.5,106.234 53.7665,127.5 80,127.5 106.234,127.5 127.5,106.234 127.5,80 127.5,53.7665 106.234,32.5 80,32.5z M31.5,80C31.5,53.2142 53.2142,31.5 80,31.5 106.786,31.5 128.5,53.2142 128.5,80 128.5,106.786 106.786,128.5 80,128.5 53.2142,128.5 31.5,106.786 31.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFE3E2E2">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,27.5C51.0051,27.5 27.5,51.0051 27.5,80 27.5,108.995 51.0051,132.5 80,132.5 108.995,132.5 132.5,108.995 132.5,80 132.5,51.0051 108.995,27.5 80,27.5z M26.5,80C26.5,50.4528 50.4528,26.5 80,26.5 109.547,26.5 133.5,50.4528 133.5,80 133.5,109.547 109.547,133.5 80,133.5 50.4528,133.5 26.5,109.547 26.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFE5E4E4">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,22.5C48.2436,22.5 22.5,48.2436 22.5,80 22.5,111.756 48.2436,137.5 80,137.5 111.756,137.5 137.5,111.756 137.5,80 137.5,48.2436 111.756,22.5 80,22.5z M21.5,80C21.5,47.6913 47.6913,21.5 80,21.5 112.309,21.5 138.5,47.6913 138.5,80 138.5,112.309 112.309,138.5 80,138.5 47.6913,138.5 21.5,112.309 21.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFE7E6E6">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,17.5C45.4822,17.5 17.5,45.4822 17.5,80 17.5,114.518 45.4822,142.5 80,142.5 114.518,142.5 142.5,114.518 142.5,80 142.5,45.4822 114.518,17.5 80,17.5z M16.5,80C16.5,44.9299 44.9299,16.5 80,16.5 115.07,16.5 143.5,44.9299 143.5,80 143.5,115.07 115.07,143.5 80,143.5 44.9299,143.5 16.5,115.07 16.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFE9E8E8">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,12.5C42.7208,12.5 12.5,42.7208 12.5,80 12.5,117.279 42.7208,147.5 80,147.5 117.279,147.5 147.5,117.279 147.5,80 147.5,42.7208 117.279,12.5 80,12.5z M11.5,80C11.5,42.1685 42.1685,11.5 80,11.5 117.832,11.5 148.5,42.1685 148.5,80 148.5,117.832 117.832,148.5 80,148.5 42.1685,148.5 11.5,117.832 11.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FFEBEAEA">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry FillRule="EvenOdd" Figures="M80,7.5C39.9594,7.5 7.5,39.9594 7.5,80 7.5,120.041 39.9594,152.5 80,152.5 120.041,152.5 152.5,120.041 152.5,80 152.5,39.9594 120.041,7.5 80,7.5z M6.5,80C6.5,39.4071 39.4071,6.5 80,6.5 120.593,6.5 153.5,39.4071 153.5,80 153.5,120.593 120.593,153.5 80,153.5 39.4071,153.5 6.5,120.593 6.5,80z" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+</ResourceDictionary>
